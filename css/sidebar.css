@@ -193,7 +193,7 @@
 		width: 50px;
 		border-radius: 50%;
 		margin: 20px;
-		background-color: var(--primary-color);
+		background-color: var(--secondary-color-dark);
 		z-index: 100;
 		/* transition: 0.3s;
         transition-timing-function: ease-out; */
