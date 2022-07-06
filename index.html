@@ -1,649 +1,613 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Observatório História e Saúde" />
+		<meta name="robots" content="noindex" />
+		<meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso" />
+		<meta name="description" content="Disciplina sobre a História da Saúde Pública no Brasil." />
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Observatório História e Saúde" />
-	<meta name="robots" content="noindex" />
-	<meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso" />
-	<meta name="description" content="Disciplina sobre a História da Saúde Pública no Brasil." />
+		<!-- Favicons and Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="./images/icons//apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="./images/icons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./images/icons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="./images/icons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="./images/icons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="./images/icons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./images/icons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="./images/icons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./images/icons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="./images/icons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png" />
+		<link rel="manifest" href="./images/icons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="./images/icons/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
 
-	<!-- Favicons and Touch Icons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="./images/icons//apple-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="60x60" href="./images/icons/apple-icon-60x60.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="./images/icons/apple-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="./images/icons/apple-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="./images/icons/apple-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="./images/icons/apple-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="./images/icons/apple-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="./images/icons/apple-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-icon-180x180.png" />
-	<link rel="icon" type="image/png" sizes="192x192" href="./images/icons/android-icon-192x192.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="96x96" href="./images/icons/favicon-96x96.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png" />
-	<link rel="manifest" href="./images/icons/manifest.json" />
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="msapplication-TileImage" content="./images/icons/ms-icon-144x144.png" />
-	<meta name="theme-color" content="#ffffff" />
+		<title>Estigma e discriminação em IST, HIV/Aids, Hepatites Virais, Micoses Endêmicas, Tuberculose e Hanseníase</title>
 
-	<title>Estigma e discriminação em IST, HIV/Aids, Hepatites Virais, Micoses Endêmicas, Tuberculose e Hanseníase
-	</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+		<!-- Bootstrap Icons CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
-	<!-- Bootstrap Icons CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="css/animate.min.css" />
 
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.min.css" />
+		<!-- Project CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/home.css" />
+	</head>
 
-	<!-- Project CSS -->
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/home.css" />
-</head>
-
-<body>
-	<header>
-		<div class="header__title">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-12">
-						<!-- <div class="logo">
+	<body>
+		<header>
+			<div class="header__title">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-12">
+							<!-- <div class="logo">
 								<img src="./images/OHS-logo.png" alt="" height="90px" />
 							</div> -->
-						<!-- <h1>Estigma e discriminação<br class="d-none d-md-block" />
+							<!-- <h1>Estigma e discriminação<br class="d-none d-md-block" />
 							em IST, HIV/Aids, Hepatites Virais, Micoses Endêmicas, Tuberculose e Hanseníase</h1> -->
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<div class="main mb-5">
-		<section class="presentation">
-			<div class="container mb-5">
-				<div class="row justify-content-center pt-5 mb-5">
-					<div class="col-12 col-md-10 col-lg-8">
-						<h2 class="heading__title">Boas-vindas!</h2>
+		<div class="main mb-5">
+			<section class="presentation">
+				<div class="container mb-5">
+					<div class="row justify-content-center pt-5 mb-5">
+						<div class="col-12 col-md-10 col-lg-8">
+							<h2 class="heading__title">Boas-vindas!</h2>
 
-						<p>Seja bem-vindo ou bem-vinda ao curso <strong>Estigma e discriminação em <a class="link" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="IST - Infecções Sexualmente Transmissíveis">IST</a>, HIV/Aids, Hepatites Virais, Micoses Endêmicas, Tuberculose e Hanseníase</strong>! Para proporcionar uma melhor experiência de aprendizagem, este curso foi organizado em três macrotemas, divididos em cinco módulos complementares:</p>
-					</div>
-				</div>
-				<div id="course-program" class="row justify-content-center">
-					<div class="col-12 col-lg-4 mb-5 mb-lg-0">
-						<div class="card h-100">
-							<div class="card-header d-flex flex-column justify-content-center text-center h-100">
-								<h5>Macrotema 1</h5>
-								<h4>Bases Conceituais</h4>
-							</div>
-							<!-- <div class="card-body">
-								<p><span>Módulo 1:</span> Enfrentamento ao estigma e discriminação</p>
-							</div> -->
-							<div class="card-footer">
-								<hr />
-								<a href="#bases-conceituais" class="button-primary">Ver detalhes</a>
-							</div>
+							<p>
+								Seja bem-vindo ou bem-vinda ao curso <strong>Estigma e discriminação em <a class="link" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="IST - Infecções Sexualmente Transmissíveis">IST</a>, HIV/Aids, Hepatites Virais, Micoses Endêmicas, Tuberculose e Hanseníase</strong>! Para proporcionar uma melhor experiência de aprendizagem, este curso foi organizado em três macrotemas, divididos em cinco módulos complementares:
+							</p>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 mb-5 mb-lg-0">
-						<div class="card h-100">
-							<div class="card-header d-flex flex-column justify-content-center text-center h-100">
-								<h5>Macrotema 2</h5>
-								<h4>Contexto social, político e histórico das populações vunlerabilizadas, normas e legislações</h4>
+					<div id="course-program" class="row justify-content-center">
+						<div class="col-12 col-lg-4 mb-5 mb-lg-0">
+							<div class="card h-100">
+								<div class="card-header d-flex flex-column justify-content-center text-center h-100">
+									<h5>Macrotema 1</h5>
+									<h4>Bases Conceituais</h4>
+								</div>
+								<!-- <div class="card-body">
+								<p><span>Módulo 1:</span> Enfrentamento ao estigma e discriminação</p>
+							</div> -->
+								<div class="card-footer">
+									<hr />
+									<a href="#bases-conceituais" class="button-primary">Ver detalhes</a>
+								</div>
 							</div>
-							<!-- <div class="card-body">
+						</div>
+						<div class="col-12 col-lg-4 mb-5 mb-lg-0">
+							<div class="card h-100">
+								<div class="card-header d-flex flex-column justify-content-center text-center h-100">
+									<h5>Macrotema 2</h5>
+									<h4>Contexto social, político e histórico das populações vunlerabilizadas, normas e legislações</h4>
+								</div>
+								<!-- <div class="card-body">
 								<p><span>Módulo 2:</span> Estigmas relacionados a algumas doenças</p>
 								<p><span>Módulo 3:</span> Estigmas relacionados a práticas ou comportamentos</p>
 								<p><span>Módulo 4</span> Estigmas relacionados a condições específicas</p>
 							</div> -->
-							<div class="card-footer">
-								<hr />
-								<a href="#contexto-social" class="button-primary">Ver detalhes</a>
+								<div class="card-footer">
+									<hr />
+									<a href="#contexto-social" class="button-primary">Ver detalhes</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-lg-4 mb-5 mb-lg-0">
-						<div class="card h-100">
-							<div class="card-header d-flex flex-column justify-content-center text-center h-100">
-								<h5>Macrotema 3</h5>
-								<h4>Práticas de enfrentamento ao estigma e discriminação</h4>
-							</div>
-							<!-- <div class="card-body">
+						<div class="col-12 col-lg-4 mb-5 mb-lg-0">
+							<div class="card h-100">
+								<div class="card-header d-flex flex-column justify-content-center text-center h-100">
+									<h5>Macrotema 3</h5>
+									<h4>Práticas de enfrentamento ao estigma e discriminação</h4>
+								</div>
+								<!-- <div class="card-body">
 								<p><span>Módulo 5:</span> Práticas de enfrentamento ao estigma e discriminação nos serviços de saúde</p>
 							</div> -->
-							<div class="card-footer">
-								<hr />
-								<a href="#praticas-de-enfrentamento" class="button-primary">Ver detalhes</a>
+								<div class="card-footer">
+									<hr />
+									<a href="#praticas-de-enfrentamento" class="button-primary">Ver detalhes</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section id="bases-conceituais" class="presentation mb-3">
+			<section id="bases-conceituais" class="presentation mb-3">
+				<div class="container">
+					<div class="row justify-content-center my-5">
+						<div class="col-12 col-md-10 col-lg-8">
+							<h3>Bases conceituais</h3>
+							<p>O primeiro macrotema deste curso, Bases Conceituais, é composto pelo <strong>Módulo 1</strong> que contém <strong>três aulas</strong>:</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!--Início tabela horizontal-->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered">
+									<caption class="h5 caption-top mb-3">
+										Módulo 1 - Enfrentamento ao estigma e discriminação
+									</caption>
+
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 1</th>
+										<td>Preconceito, estigma e discriminação</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 2</th>
+										<td>Condições individuais, programáticas e sociais da vulnerabilidade</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 3</th>
+										<td>Implicações éticas em saúde</td>
+									</tr>
+								</table>
+							</div>
+							<!--Fim da Tabela horizontal-->
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<p>Na <strong>primeira aula</strong>, você verá sobre o conceito de estigma, as relações entre estigma e saúde e como o estigma, preconceito e discriminação se relacionam e seus impactos nono acesso aos serviços e no cuidado.</p>
+
+							<p>Já que a produção do estigma está relacionada aos sistemas de desigualdades, a <strong>segunda aula</strong> descreverá as condições que produzem as vulnerabilidades individuais, sociais e programáticas e as barreiras estruturais de acesso e vinculação dos usuários aos serviços de saúde.</p>
+
+							<p>A <strong>terceira aula</strong> deste módulo apresentará reflexões sobre os princípios éticos, assim como as questões morais, que interferem nas condutas profissionais e nos cuidados em saúde dos indivíduos, buscando relacioná-los a aspectos legais e de direitos humanos.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-around">
+								<a class="button-primary mb-5 mb-md-0" href="modulo1/aula1/inicio.html" rel="prev">Acessar Módulo 1</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contexto-social" class="bg-color-light presentation">
+				<div class="container">
+					<div class="row justify-content-center my-5">
+						<div class="col-12 col-md-10 col-lg-8">
+							<h3>Contexto social, político e histórico das populações vunlerabilizadas, normas e legislações</h3>
+							<p>O segundo macrotema deste curso é composto por três módulos, cada um deles contêm três aulas que discutem a influência do contexto social, político e histórico para a produção de estigma e discriminação entre segmentos mais vulneráveis.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!--Início tabela horizontal-->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered">
+									<caption class="h5 caption-top mb-3">
+										Módulo 2 - Estigmas relacionados a algumas doenças
+									</caption>
+
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 1</th>
+										<td>Pessoas vivendo com HIV/AIDS e pessoas com Infecções Sexualmente Transmissíveis</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 2</th>
+										<td>Pessoas acometidas pela hanseníase e seus familiares e pessoas acometidas pelas micoses endêmicas</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 3</th>
+										<td>Pessoas acometidas pelas hepatites virais e pessoas acometidas pela tuberculose</td>
+									</tr>
+								</table>
+							</div>
+							<!--Fim da Tabela horizontal-->
+						</div>
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<p>No <strong>Módulo 2</strong>, você verá sobre o estigma associado a doenças específicas explorado nas aulas sobre as pessoas com hanseníase e com micoses endêmicas; as pessoas vivendo com HIV/AIDS ou outras ISTs e as pessoas com hepatites virais e com tuberculose.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-around">
+								<a class="button-primary mb-5 mb-md-0" href="modulo2/aula1/inicio.html" rel="prev">Acessar Módulo 2</a>
+							</div>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row justify-content-center mt-5">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!--Início tabela horizontal-->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered">
+									<caption class="h5 caption-top mb-3">
+										Módulo 3 - Estigmas relacionados práticas ou comportamentos
+									</caption>
+
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 1</th>
+										<td>Pessoas em situação de rua e pessoas privadas de liberdade no contexto dos serviços de saúde</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 2</th>
+										<td>Pessoas que usam álcool e outras drogas</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 3</th>
+										<td>Profissionais do sexo</td>
+									</tr>
+								</table>
+							</div>
+							<!--Fim da Tabela horizontal-->
+						</div>
+
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<p>O <strong>Módulo 3</strong> abordará os estigmas considerando práticas e situações socialmente marginalizadas como o uso de drogas, a vida em situação de rua ou privada de liberdade, e relacionado aos profissionais do sexo.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-around">
+								<a class="button-primary mb-5 mb-md-0" href="modulo3/aula1/inicio.html" rel="prev">Acessar Módulo 3</a>
+							</div>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row justify-content-center mt-5">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!--Início tabela horizontal-->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered">
+									<caption class="h5 caption-top mb-3">
+										Módulo 4 - Estigmas relacionados a condições específicas
+									</caption>
+
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 1</th>
+										<td>População negra</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 2</th>
+										<td>População indígena</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 3</th>
+										<td>População LGBTQIA+</td>
+									</tr>
+								</table>
+							</div>
+							<!--Fim da Tabela horizontal-->
+						</div>
+
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<p>No <strong>Módulo 4</strong> o estigma relacionado às diferenças étnico-raciais e à diversidade sexual é discutido ao se abordar as populações negra, indígena e LGBTQIA+.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-around">
+								<a class="button-primary mb-5 mb-md-0" href="modulo4/aula1/inicio.html" rel="prev">Acessar Módulo 4</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="praticas-de-enfrentamento" class="presentation mb-3">
+				<div class="container">
+					<div class="row justify-content-center my-5">
+						<div class="col-12 col-md-10 col-lg-8">
+							<h3>Práticas de enfrentamento ao estigma e discriminação</h3>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!--Início tabela horizontal-->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered">
+									<caption class="h5 caption-top mb-3">
+										Módulo 5 - Práticas de enfrentamento ao estigma e discriminação nos serviços de saúde
+									</caption>
+
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 1</th>
+										<td>Normas e legislações vigentes relacionadas ao enfrentamento do estigma, da discriminação e das legislações discriminatórias</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 2</th>
+										<td>Condições e estratégias para alcance de um serviço livre de discriminação</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 3</th>
+										<td>Práticas estigmatizantes e discriminatórias dirigidas as/os usuários(as) dos serviços de saúde</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center" width="20%">Aula 4</th>
+										<td>Estratégias de melhoria para acesso aos serviços pelos(as) usuários(as)</td>
+									</tr>
+								</table>
+							</div>
+							<!--Fim da Tabela horizontal-->
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<p>O <strong>Módulo 5</strong> ao longo de quatro aulas abordará estratégias para o cumprimento de normas e legislações voltadas ao enfrentamento do estigma, bem como discutirá as legislações discriminatórias. Serão apresentadas também boas práticas e tecnologias sociais de acolhimento dos diversos grupos sociais, visando um serviço livre de discriminação. Por fim, faremos uma reflexão sobre as práticas discriminatórias dirigidas aos usuários e as estratégias de melhoria de acesso aos serviços.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-around">
+								<a class="button-primary mb-5 mb-md-0" href="modulo5/aula1/inicio.html" rel="prev">Acessar Módulo 5</a>
+							</div>
+						</div>
+					</div>
+					<hr />
+				</div>
+			</section>
+
+			<section class="presentation mb-3 bg-section pt-0">
+				<div class="container">
+					<div class="row justify-content-center my-5">
+						<div class="col-12 col-md-10 col-lg-8">
+							<p>Este mosaico pretende ilustrar a dinâmica de produção do estigma que, como processo social de desqualificação e exclusão, pode eleger diferentes objetos em torno dos quais são construídas crenças pejorativas que justificam atos de preconceito e discriminação.</p>
+
+							<p>Esperamos que as reflexões e atividades propostas possam auxiliar os trabalhadores e trabalhadoras da saúde na compreensão e no enfretamento ao estigma, preconceito e discriminação no contexto da atenção à saúde de diversos grupos sociais.</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
+							<!-- Box de Atenção -->
+							<div class="card-box card shadow mb-5">
+								<div class="box-quote">
+									<h5><i class="box-quote__icone bi bi-exclamation-lg" data-fa-transform="grow-25" aria-hidden="true"></i>Atenção</h5>
+									<div class="boxes-content">
+										<p>Recomendamos que o curso seja realizado linearmente, pois a sequência das aulas facilita o entendimento sobre o material apresentado. No entanto, as aulas podem ser assistidas na ordem que forem consideradas mais satisfatórias.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Fim do Box de Atenção -->
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<p><strong>Bom curso!</strong></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
 			<div class="container">
-				<div class="row justify-content-center my-5">
-					<div class="col-12 col-md-10 col-lg-8">
-						<h3>Bases conceituais</h3>
-						<p>O primeiro macrotema deste curso, Bases Conceituais, é composto pelo <strong>Módulo 1</strong> que contém <strong>três aulas</strong>: </p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!--Início tabela horizontal-->
-						<div class="table-responsive mb-5">
-							<table class="table table-bordered">
-								<caption class="h5 caption-top mb-3">Módulo 1 - Enfrentamento ao estigma e discriminação
-								</caption>
-
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 1</th>
-									<td>Preconceito, estigma e discriminação</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 2</th>
-									<td>Condições individuais, programáticas e sociais da vulnerabilidade</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 3</th>
-									<td>Implicações éticas em saúde</td>
-								</tr>
-							</table>
-						</div>
-						<!--Fim da Tabela horizontal-->
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<p>Na <strong>primeira aula</strong>, você verá sobre o conceito de estigma, as relações entre estigma e saúde e como o estigma, preconceito e discriminação se relacionam e seus impactos nono acesso aos serviços e no cuidado. </p>
-
-						<p>Já que a produção do estigma está relacionada aos sistemas de desigualdades, a <strong>segunda aula</strong> descreverá as condições que produzem as vulnerabilidades individuais, sociais e programáticas e as barreiras estruturais de acesso e vinculação dos usuários aos serviços de saúde. </p>
-
-						<p>A <strong>terceira aula</strong> deste módulo apresentará reflexões sobre os princípios éticos, assim como as questões morais, que interferem nas condutas profissionais e nos cuidados em saúde dos indivíduos, buscando relacioná-los a aspectos legais e de direitos humanos. </p>
-					</div>
-				</div>
-
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<div class="page-nav d-flex justify-content-around">
-							<a class="button-primary mb-5 mb-md-0" href="modulo1/aula1/inicio.html" rel="prev">Acessar Módulo 1</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<section id="contexto-social" class="bg-color-light presentation">
-			<div class="container">
-				<div class="row justify-content-center my-5">
-					<div class="col-12 col-md-10 col-lg-8">
-						<h3>Contexto social, político e histórico das populações vunlerabilizadas, normas e legislações</h3>
-						<p>O segundo macrotema deste curso é composto por três módulos, cada um deles contêm três aulas que discutem a influência do contexto social, político e histórico para a produção de estigma e discriminação entre segmentos mais vulneráveis.</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!--Início tabela horizontal-->
-						<div class="table-responsive mb-5">
-							<table class="table table-bordered">
-								<caption class="h5 caption-top mb-3">Módulo 2 - Estigmas relacionados a algumas doenças</caption>
-
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 1</th>
-									<td>Pessoas vivendo com HIV/AIDS e pessoas com Infecções Sexualmente Transmissíveis</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 2</th>
-									<td>Pessoas acometidas pela hanseníase e seus familiares e pessoas acometidas pelas micoses endêmicas</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 3</th>
-									<td>Pessoas acometidas pelas hepatites virais e pessoas acometidas pela tuberculose</td>
-								</tr>
-							</table>
-						</div>
-						<!--Fim da Tabela horizontal-->
-					</div>
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<p>No <strong>Módulo 2</strong>, você verá sobre o estigma associado a doenças específicas explorado nas aulas sobre as pessoas com hanseníase e com micoses endêmicas; as pessoas vivendo com HIV/AIDS ou outras ISTs e as pessoas com hepatites virais e com tuberculose. </p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<div class="page-nav d-flex justify-content-around">
-							<a class="button-primary mb-5 mb-md-0" href="modulo2/aula1/inicio.html" rel="prev">Acessar Módulo 2</a>
-						</div>
-					</div>
-				</div>
-
-				<hr/>
-
-				<div class="row justify-content-center mt-5">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!--Início tabela horizontal-->
-						<div class="table-responsive mb-5">
-							<table class="table table-bordered">
-								<caption class="h5 caption-top mb-3">Módulo 3 - Estigmas relacionados práticas ou comportamentos</caption>
-
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 1</th>
-									<td>Pessoas em situação de rua e pessoas privadas de liberdade no contexto dos serviços de saúde</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 2</th>
-									<td>Pessoas que usam álcool e outras drogas</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 3</th>
-									<td>Profissionais do sexo</td>
-								</tr>
-							</table>
-						</div>
-						<!--Fim da Tabela horizontal-->
-					</div>
-
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<p>O <strong>Módulo 3</strong> abordará os estigmas considerando práticas e situações socialmente marginalizadas como o uso de drogas, a vida em situação de rua ou privada de liberdade, e relacionado aos profissionais do sexo.</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<div class="page-nav d-flex justify-content-around">
-							<a class="button-primary mb-5 mb-md-0" href="modulo3/aula1/inicio.html" rel="prev">Acessar Módulo 3</a>
-						</div>
-					</div>
-				</div>
-
-				<hr/>
-
-				<div class="row justify-content-center mt-5">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!--Início tabela horizontal-->
-						<div class="table-responsive mb-5">
-							<table class="table table-bordered">
-								<caption class="h5 caption-top mb-3">Módulo 4 - Estigmas relacionados a condições específicas</caption>
-
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 1</th>
-									<td>População negra</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 2</th>
-									<td>População indígena</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 3</th>
-									<td>População LGBTQIA+</td>
-								</tr>
-							</table>
-						</div>
-						<!--Fim da Tabela horizontal-->
-					</div>
-
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<p>No <strong>Módulo 4</strong> o estigma relacionado às diferenças étnico-raciais e à diversidade sexual é discutido ao se abordar as populações negra, indígena e LGBTQIA+.  </p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<div class="page-nav d-flex justify-content-around">
-							<a class="button-primary mb-5 mb-md-0" href="modulo4/aula1/inicio.html" rel="prev">Acessar Módulo 4</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="praticas-de-enfrentamento" class="presentation mb-3">
-			<div class="container">
-				<div class="row justify-content-center my-5">
-					<div class="col-12 col-md-10 col-lg-8">
-						<h3>Práticas de enfrentamento ao estigma e discriminação</h3>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!--Início tabela horizontal-->
-						<div class="table-responsive mb-5">
-							<table class="table table-bordered">
-								<caption class="h5 caption-top mb-3">Módulo 5 - Práticas de enfrentamento ao estigma e discriminação nos serviços de saúde</caption>
-
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 1</th>
-									<td>Normas e legislações vigentes relacionadas ao enfrentamento do estigma, da discriminação e das legislações discriminatórias</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 2</th>
-									<td>Condições e estratégias para alcance de um serviço livre de discriminação</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 3</th>
-									<td>Práticas estigmatizantes e discriminatórias dirigidas as/os usuários(as) dos serviços de saúde</td>
-								</tr>
-								<tr>
-									<th scope="row" class="text-center" width="20%">Aula 4</th>
-									<td>Estratégias de melhoria para acesso aos serviços pelos(as) usuários(as)</td>
-								</tr>
-							</table>
-						</div>
-						<!--Fim da Tabela horizontal-->
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<p>O <strong>Módulo 5</strong> ao longo de quatro aulas abordará estratégias para o cumprimento de normas e legislações voltadas ao enfrentamento do estigma, bem como discutirá as legislações discriminatórias. Serão apresentadas também boas práticas e tecnologias sociais de acolhimento dos diversos grupos sociais, visando um serviço livre de discriminação. Por fim, faremos uma reflexão sobre as práticas discriminatórias dirigidas aos usuários e as estratégias de melhoria de acesso aos serviços. </p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<div class="page-nav d-flex justify-content-around">
-							<a class="button-primary mb-5 mb-md-0" href="modulo5/aula1/inicio.html" rel="prev">Acessar Módulo 5</a>
-						</div>
-					</div>
-				</div>
-				<hr/>
-			</div>
-		</section>
-
-		<section class="presentation mb-3 bg-section pt-0">
-			<div class="container">
-				<div class="row justify-content-center my-5">
-					<div class="col-12 col-md-10 col-lg-8">
-						<p>Este mosaico pretende ilustrar a dinâmica de produção do estigma que, como processo social de desqualificação e exclusão, pode eleger diferentes objetos em torno dos quais são construídas crenças pejorativas que justificam atos de preconceito e discriminação.  </p>
-
-						<p>Esperamos que as reflexões e atividades propostas possam auxiliar os trabalhadores e trabalhadoras da saúde na compreensão e no enfretamento ao estigma, preconceito e discriminação no contexto da atenção à saúde de diversos grupos sociais.</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8 mb-5 mb-lg-0">
-						<!-- Box de Atenção -->
-                        <div class="card-box card border-0 shadow mb-5">
-                            <div class="box-quote">
-                                <h5>
-                                    <i class="box-quote__icone bi bi-exclamation-lg" data-fa-transform="grow-25"
-                                        aria-hidden="true"></i>Atenção
-                                </h5>
-                                <div class="boxes-content">
-
-                                    <p>Recomendamos que o curso seja realizado linearmente, pois a sequência das aulas facilita o entendimento sobre o material apresentado. No entanto, as aulas podem ser assistidas na ordem que forem consideradas mais satisfatórias.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fim do Box de Atenção -->
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-10 col-lg-8">
-						<p><strong>Bom curso!</strong></p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<footer>
-		<div class="container">
-			<div class="row justify-content-center py-4">
-				<div class="col-12 col-md-10 col-lg-4">
-					<p class="text-center"><small>Realização:</small></p>
-					<ul class="logos pt-0">
-						<li><img src="./images/logo-cv-dark.svg" alt="Logo da Campus Virtual Fiocruz" height="50px" />
-						</li>
-						<!-- <li><img src="./images/OHS-logo-dark.png" alt="Logo Observatório História e Saúde"
+				<div class="row justify-content-center py-4">
+					<div class="col-12 col-md-10 col-lg-4">
+						<p class="text-center"><small>Realização:</small></p>
+						<ul class="logos pt-0">
+							<li><img src="./images/logo-cv-dark.svg" alt="Logo da Campus Virtual Fiocruz" height="50px" /></li>
+							<!-- <li><img src="./images/OHS-logo-dark.png" alt="Logo Observatório História e Saúde"
 								height="55px" /></li> -->
-					</ul>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-8">
+						<p class="text-center mb-0"><small>Apoio:</small></p>
+						<ul class="logos pt-0">
+							<!-- <li><img src="./images/COC.svg" alt="Logo da Casa Oswaldo Cruz" height="80px" /></li> -->
+							<li><img src="./images/fiocruz.svg" alt="Logo da Fiocruz" height="80px" /></li>
+							<li><img src="./images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px" /></li>
+							<li><img src="./images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px" /></li>
+						</ul>
+					</div>
 				</div>
 			</div>
+		</footer>
 
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-10 col-lg-8">
-					<p class="text-center mb-0"><small>Apoio:</small></p>
-					<ul class="logos pt-0">
-						<!-- <li><img src="./images/COC.svg" alt="Logo da Casa Oswaldo Cruz" height="80px" /></li> -->
-						<li><img src="./images/fiocruz.svg" alt="Logo da Fiocruz" height="80px" /></li>
-						<li><img src="./images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px" /></li>
-						<li><img src="./images/ministerio-da-saude-e-governo-federal.svg"
-								alt="Logo do Ministério da Saúde e Governo Federal" height="50px" /></li>
-					</ul>
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="./js/anime.min.js"></script>
+		<script type="text/javascript" src="./js/custom-anime.js"></script>
+
+		<!-- Modal Créditos -->
+		<div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal-creditos">Créditos</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-10">
+								<h6 class="mb-2">Ministério da Saúde</h6>
+								<div class="mb-5">
+									<p class="mb-1">Marcelo Queiroga</p>
+									<p class="small text-muted"><em>Ministro</em></p>
+								</div>
+
+								<h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
+								<div class="mb-5">
+									<p class="mb-1">Nísia Trindade Lima</p>
+									<p class="small text-muted"><em>Presidente</em></p>
+									<p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação (VPEIC)<br />Cristiani Vieira Machado</p>
+									<p class="small text-muted"><em>Vice-Presidente</em></p>
+								</div>
+
+								<h6 class="mb-2">Campus Virtual Fiocruz</h6>
+								<div class="mb-5">
+									<p class="mb-1">Ana Cristina da Matta Furniel</p>
+									<p class="small text-muted"><em>Coordenadora geral</em></p>
+									<p class="mb-1">Adélia Araújo</p>
+									<p class="small text-muted"><em>Coordenadora de produção</em></p>
+								</div>
+
+								<h6 class="mb-2">História da Saúde Pública no Brasil</h6>
+								<div class="mb-5">
+									<p class="mb-1">Carlos Henrique Assunção Paiva</p>
+									<p class="small text-muted"><em>Coordenação acadêmica</em></p>
+									<hr />
+									<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
+									<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Conteudistas</strong></p>
+
+									<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
+									<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">José Roberto Franco Reis</p>
+									<p class="small text-muted">Historiador. Doutor em história social pela Unicamp. Pesquisador do Observatório História e Saúde - COC-FIOCRUZ</p>
+									<hr />
+									<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
+									<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz</p>
+									<hr />
+									<p class="mb-1 small">Luiz Alves Araújo Neto</p>
+									<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório História e Saúde (COC/Fiocruz).</p>
+									<hr />
+									<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
+									<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
+									<hr />
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
+
+									<p class="mb-1 small">Flávio Coelho Edler</p>
+									<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Robert Wegner</p>
+									<p class="small text-muted">Cientista Social. Doutor em Sociologia pelo IUPERJ/UCAM. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Rômulo de Paula Andrade</p>
+									<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pelo PPGHCS/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Tânia Maria Dias Fernandes</p>
+									<p class="small text-muted">Graduada em Farmácia. Doutora em História Social pela USP. Professora do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Tânia Salgado Pimenta</p>
+									<p class="small text-muted">Historiadora. Doutora em História pela Unicamp. Professora do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Revisão Técnica</strong></p>
+									<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
+									<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">José Roberto Franco Reis</p>
+									<p class="small text-muted">Historiador. Doutor em história social pela Unicamp. Pesquisador do Observatório História e Saúde - COC-FIOCRUZ.</p>
+									<hr />
+									<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
+									<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz.</p>
+									<hr />
+									<p class="mb-1 small">Luiz Alves Araújo Neto</p>
+									<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório História e Saúde (COC/Fiocruz).</p>
+									<hr />
+									<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
+									<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
+									<hr />
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Revisão de Português</strong></p>
+									<p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Designer Educacional</strong></p>
+									<p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Designer de Interface</strong></p>
+									<p class="mb-1">Aline Polycarpo</p>
+									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+									<p class="mb-1">Danilo Blum</p>
+									<p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
+									<p class="mb-1">Luciana Nunes</p>
+									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
+									<p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Desenvolvedor</em></p>
+									<p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Desenvolvedor</em></p>
+									<p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Analista de suporte</em></p>
+									<p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Analista de suporte</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Recursos Educacionais</strong></p>
+									<p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Bibliotecária</em></p>
+									<p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3 small"><strong>Recursos Audiovisuais</strong></p>
+									<p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Edição de vídeo</em></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button-primary" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+	</body>
 
 	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+	<!-- Initialize Popover -->
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover();
+		});
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-	</script>
-
-	<script type="text/javascript" src="./js/anime.min.js"></script>
-	<script type="text/javascript" src="./js/custom-anime.js"></script>
-
-	<!-- Modal Créditos -->
-	<div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="modal-creditos">Créditos</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="row justify-content-center">
-						<div class="col-12 col-md-10 col-lg-10">
-							<h6 class="mb-2">Ministério da Saúde</h6>
-							<div class="mb-5">
-								<p class="mb-1">Marcelo Queiroga</p>
-								<p class="small text-muted"><em>Ministro</em></p>
-							</div>
-
-							<h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
-							<div class="mb-5">
-								<p class="mb-1">Nísia Trindade Lima</p>
-								<p class="small text-muted"><em>Presidente</em></p>
-								<p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação
-									(VPEIC)<br />Cristiani Vieira Machado</p>
-								<p class="small text-muted"><em>Vice-Presidente</em></p>
-							</div>
-
-							<h6 class="mb-2">Campus Virtual Fiocruz</h6>
-							<div class="mb-5">
-								<p class="mb-1">Ana Cristina da Matta Furniel</p>
-								<p class="small text-muted"><em>Coordenadora geral</em></p>
-								<p class="mb-1">Adélia Araújo</p>
-								<p class="small text-muted"><em>Coordenadora de produção</em></p>
-							</div>
-
-							<h6 class="mb-2">História da Saúde Pública no Brasil</h6>
-							<div class="mb-5">
-								<p class="mb-1">Carlos Henrique Assunção Paiva</p>
-								<p class="small text-muted"><em>Coordenação acadêmica</em></p>
-								<hr />
-								<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-								<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ.
-									Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do
-									PPGHCS/COC/Fiocruz.</p>
-								<hr />
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Conteudistas</strong></p>
-
-								<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-								<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ.
-									Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do
-									PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">José Roberto Franco Reis</p>
-								<p class="small text-muted">Historiador. Doutor em história social pela Unicamp.
-									Pesquisador do Observatório História e Saúde - COC-FIOCRUZ</p>
-								<hr />
-								<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
-								<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador
-									adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto
-									Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da
-									Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz</p>
-								<hr />
-								<p class="mb-1 small">Luiz Alves Araújo Neto</p>
-								<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela
-									Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório
-									História e Saúde (COC/Fiocruz).</p>
-								<hr />
-								<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-								<p class="small text-muted">Cientista social formado pela Universidade Federal
-									Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História
-									da Saúde Pública no Brasil.</p>
-								<hr />
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
-
-								<p class="mb-1 small">Flávio Coelho Edler</p>
-								<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ.
-									Professor do PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">Robert Wegner</p>
-								<p class="small text-muted">Cientista Social. Doutor em Sociologia pelo IUPERJ/UCAM.
-									Professor do PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">Rômulo de Paula Andrade</p>
-								<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pelo
-									PPGHCS/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">Tânia Maria Dias Fernandes</p>
-								<p class="small text-muted">Graduada em Farmácia. Doutora em História Social pela USP.
-									Professora do PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">Tânia Salgado Pimenta</p>
-								<p class="small text-muted">Historiadora. Doutora em História pela Unicamp. Professora
-									do PPGHCS/COC/Fiocruz.</p>
-								<hr />
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Revisão Técnica</strong></p>
-								<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-								<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ.
-									Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do
-									PPGHCS/COC/Fiocruz.</p>
-								<hr />
-								<p class="mb-1 small">José Roberto Franco Reis</p>
-								<p class="small text-muted">Historiador. Doutor em história social pela Unicamp.
-									Pesquisador do Observatório História e Saúde - COC-FIOCRUZ.</p>
-								<hr />
-								<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
-								<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador
-									adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto
-									Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da
-									Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz.</p>
-								<hr />
-								<p class="mb-1 small">Luiz Alves Araújo Neto</p>
-								<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela
-									Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório
-									História e Saúde (COC/Fiocruz).</p>
-								<hr />
-								<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-								<p class="small text-muted">Cientista social formado pela Universidade Federal
-									Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História
-									da Saúde Pública no Brasil.</p>
-								<hr />
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Revisão de Português</strong></p>
-								<p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Designer Educacional</strong></p>
-								<p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e
-										Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Designer de Interface</strong></p>
-								<p class="mb-1">Aline Polycarpo</p>
-								<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-								<p class="mb-1">Danilo Blum</p>
-								<p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
-								<p class="mb-1">Luciana Nunes</p>
-								<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
-								<p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Desenvolvedor</em></p>
-								<p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Desenvolvedor</em></p>
-								<p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Analista de suporte</em></p>
-								<p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Analista de suporte</em></p>
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Recursos Educacionais</strong></p>
-								<p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Bibliotecária</em></p>
-								<p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
-							</div>
-
-							<div class="mb-5">
-								<p class="mb-3 small"><strong>Recursos Audiovisuais</strong></p>
-								<p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
-								<p class="small text-muted"><em>Edição de vídeo</em></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="button-primary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
-
-<!-- Initialize Popover -->
-<script>
-    $(function () {
-      $('[data-toggle="popover"]').popover()
-    });
-  </script>
 </html>

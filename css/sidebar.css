@@ -32,14 +32,15 @@
 	margin: 0px 20px;
 }
 .sidebar__header {
-	padding: 40px 20px;
+	padding: 30px 20px;
 }
 .sidebar__header h1 {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 0;
 	line-height: 1.25;
-	font-size: 2rem;
+	font-size: 2.26rem;
+	text-transform: uppercase;
 }
 .sidebar__header h1 span {
 	display: block;
@@ -56,8 +57,9 @@
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	line-height: 1.25;
-	font-weight: 500;
+	font-size: 20px;
 	padding: 0 20px;
+	font-family: 'Roboto Medium', sans-serif !important;
 }
 .sidebar__section h3 span {
 	display: block;

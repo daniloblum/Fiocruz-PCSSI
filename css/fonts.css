@@ -35,7 +35,16 @@
 	src: url(../fonts/bootstrap-icons.woff);
 }
 
-/* Google Material Symbols */
+/* Patrick Hands */
+
+@font-face {
+	font-family: 'Patrick Hands';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/PatrickHand-Regular.ttf');
+}
+
+/* Roboto Condensed */
 
 @font-face {
 	font-family: 'Roboto Condensed';
@@ -74,16 +83,7 @@
 	src: url('../fonts/RobotoCondensed-BoldItalic.ttf');
 }
 
-/* Patrick Hands */
-
-@font-face {
-	font-family: 'Patrick Hands';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/PatrickHand-Regular.ttf');
-}
-
-/* Patrick Hands */
+/* Roboto */
 
 @font-face {
 	font-family: 'Roboto Thin';
