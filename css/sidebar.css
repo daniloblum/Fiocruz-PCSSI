@@ -43,12 +43,7 @@
 	text-transform: uppercase;
 }
 .sidebar__header h1 span {
-	display: block;
-	color: var(--secondary-color-extra-light) !important;
-	font-family: 'Noto Sans', sans-serif !important;
-	margin: 10px 0;
-	line-height: 1.5;
-	font-weight: 500;
+	font-family: 'Roboto Condensed Bold', sans-serif;
 }
 .sidebar__section {
 	padding: 20px 0;

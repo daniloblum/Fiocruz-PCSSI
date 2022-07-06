@@ -6,37 +6,37 @@
 	position: relative;
 }
 #page-content:before {
+	content: '';
+	background: url(../images/page-content-bg1.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50px;
+	right: 0%;
+	z-index: -1;
 	opacity: 0.5;
 }
 #page-content:after {
-	display: none;
+	content: '';
+	display: block;
+	background: url(../images/page-content-bg2.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 500px;
+	left: 0%;
+	z-index: -1;
+	opacity: 0.5;
 }
-@media (min-width: 992px) {
+@media (min-width: 1600px) {
 	#page-content:before {
-		content: '';
-		background: url(../images/page-content-bg1.png);
-		background-repeat: space;
-		width: 500px;
-		max-width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 50px;
-		right: 0%;
-		z-index: -1;
 		opacity: 1;
 	}
 	#page-content:after {
-		content: '';
-		display: block;
-		background: url(../images/page-content-bg2.png);
-		background-repeat: space;
-		width: 500px;
-		max-width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 500px;
-		left: 0%;
-		z-index: -1;
 		opacity: 1;
 	}
 }
@@ -291,8 +291,9 @@ Accordion
 	text-decoration: none !important;
 	padding-right: 60px;
 	font-family: 'Patrick Hands';
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	text-transform: uppercase;
+	line-height: 1.25;
 }
 
 /* --------------------------------
@@ -436,7 +437,7 @@ Cards de Comparação e Diferenciação
 	padding: 0 0 20px 0;
 	font-family: 'Patrick Hands', sans-serif;
 	font-size: 1.5rem;
-	border-bottom: 1px solid var(--secondary-color-light);
+	border-bottom: 1px solid #bfb5af;
 	text-transform: uppercase;
 	background: transparent;
 }
@@ -458,8 +459,8 @@ Carta
 
 .carta {
 	padding: 50px;
-	background-color: #f5e1b5;
-	background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c7a968' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background-color: #ffefe7;
+	/* background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c7a968' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E"); */
 	/* background-color: var(--secondary-color-light); */
 	font-style: italic;
 	color: var(--secondary-color-dark);
@@ -610,7 +611,7 @@ Destaques
 }
 .box-title .h4 {
 	padding-bottom: 20px;
-	border-bottom: 1px solid var(--secondary-color-light);
+	border-bottom: 1px solid #bfb5af;
 	margin-bottom: 20px;
 	display: block;
 	/* font-weight: 500; */
@@ -912,20 +913,28 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 
 /*Destaque Parallax*/
 
-.page-title-parallax {
+.page-title-parallax[data-parallax='dark'] {
+	background: linear-gradient(0deg, rgba(77, 50, 69, 0.7), rgba(77, 50, 69, 0.7)), url(../images/parallax-bg-primary.png);
+	color: #ffffff;
 	padding: 50px 0;
-}
-
-.page-title-parallax a {
-	color: var(--secondary-color-extra-light);
-}
-
-.page-title-parallax {
-	background-color: transparent;
-	/* background-image: url(images/parallax/parallax-bg.jpg); */
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
+}
+.page-title-parallax[data-parallax='dark'] a {
+	color: #ffffff;
+}
+
+.page-title-parallax[data-parallax='light'] {
+	background: url(../images/parallax-bg-secondary.png);
+	padding: 50px 0;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+.page-title-parallax[data-parallax='light'] p {
+	font-family: 'Patrick Hands', sans-serif;
+	font-size: 2rem;
 }
 
 /*Fundos de destaques*/
