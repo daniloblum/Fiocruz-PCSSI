@@ -1,161 +1,223 @@
 /* s */
 
 html {
-    scroll-behavior: smooth;
-  }
+	height: 100%;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
 
 body {
-    background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	-webkit-perspective: 1px;
+	perspective: 1px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
+/* HEADER  */
 
-header {
-    position: relative;
-    background-image: url(../images/home/tarja-capa.jpg);
-    background-size: cover;
-    background-position:top center;
-    height: 140vw;
+.header-hero {
+	box-sizing: border-box;
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	-webkit-transform-style: inherit;
+	transform-style: inherit;
+	width: 100vw;
 }
-.main {
-    background: #F8FAFC url(../images/home/section-bg.png);
-    background-repeat: no-repeat;
-    background-position-y: 20%;
-    background-position-x: center;
-    background-size: 200%;
-    transform: translateY(-80px);
+.header-hero,
+.header-hero .background-texture {
+	background: 50% 50% / cover;
 }
-/* .main::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(2);
-    background-size: 100%;
-    z-index: -1;
-    background-image: url('http://www.shainblumphoto.com/wp-content/uploads/2016/02/dubai_1.jpg');
-  } */
-
-.header__title {
-    text-align: center;
+.header-hero .background-texture {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url('/images/home/tarja_texture.jpg');
+	background-size: cover;
+	-webkit-transform-origin: center center 0;
+	-webkit-transform: translateZ(-1px) scale(2);
+	transform-origin: center center 0;
+	transform: translateZ(-3px) scale(4);
+	z-index: -2;
+	min-height: 100vh;
 }
-
-.header__title .logo {
-    display: inline-block;
-    padding: 15px 20px;
-    background-color: var(--primary-color-light);
-    border-radius: 0 0 .5rem .5rem;
-    margin: 0 auto 10vw;
+.header-hero .background-right {
+	bottom: 0;
+	/* left: 0; */
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url('/images/home/tarja_direita.png');
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	-webkit-transform-origin: center center 0;
+	-webkit-transform: translateZ(-1px) scale(2) translate(55%, -10vh);
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2) translate(55%, -10vh);
+	z-index: -1;
+	height: 80vh;
+	width: 600px;
 }
-
-.header__title .logo img {
-    height: 60px;
+.header-hero .background-left {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	/* right: 0; */
+	top: 0;
+	display: block;
+	background-image: url('/images/home/tarja_esquerda.png');
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	-webkit-transform-origin: center center 0;
+	-webkit-transform: translateZ(-1px) scale(2) translate(-55%, -10vh);
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2) translate(-55%, -10vh);
+	z-index: -1;
+	height: 80vh;
+	width: 600px;
 }
 
 .header__title h1 {
-    font-size: 12vw;
-    font-family: 'Noto Sans', sans-serif;
-    margin: 0 auto;
+	font-size: 12vw;
+	margin: 0 auto;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 2px 4px 2px rgb(0 0 0 / 50%);
+	text-transform: uppercase;
+	line-height: 1;
+	padding: 50px 30vw;
+}
+.header__title h1 span {
+	font-family: 'Roboto Condensed Bold', sans-serif;
 }
 
-@media (min-width:768px) {
-    header {
-        height: 70vw;
-    }
-    .header__title .logo {
-        margin: 0 auto 2vw;
-    }
-    .header__title h1 {
-        font-size: 6vw;
-    }
-    
+@media (min-width: 768px) {
+	/* header {
+		height: 70vw;
+	} */
+	.header__title .logo {
+		margin: 0 auto 2vw;
+	}
+	.header__title h1 {
+		font-size: 2.5vw;
+	}
 }
 
-@media (min-width:992px) {
-    header {
-        height: 30vw;
-    }
-    .header__title .logo {
-        margin: 0 auto 2vw;
-    }
-    .header__title h1 {
-        font-size: 3.25vw;
-    }
+@media (min-width: 992px) {
+	/* header {
+		height: 30vw;
+	} */
+	.header__title .logo {
+		margin: 0 auto 2vw;
+	}
+	.header__title h1 {
+		font-size: 4.25vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.header__title h1 {
+		font-size: 4.25vw;
+	}
+}
+
+main {
+	background-color: inherit;
+	position: relative;
+	z-index: 2;
 }
 
 #course-program .card {
-    border: 1px solid var(--secondary-color);
-    box-shadow: 0 16px 60px rgba(0,0,0,0.1);
-    height: 100%;
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+	height: 100%;
 }
 
 #course-program .card .card-header {
-    border-bottom: none;
-    background: none;
-    padding: 1.25rem;
-    padding-bottom: 0;
+	border-bottom: none;
+	background: none;
+	padding: 1.25rem;
+	padding-bottom: 0;
 }
 #course-program .card .card-header :first-child {
-    margin-bottom: 1rem;
-    font-size: 1.15rem;
+	margin-bottom: 1rem;
+	font-size: 1.15rem;
 }
-#course-program .card .card-header :nth-child(2){
-    color: var(--dark-color);
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+#course-program .card .card-header :nth-child(2) {
+	color: var(--dark-color);
+	margin-bottom: 1.25rem;
+	font-size: 1.25rem;
 }
 #course-program .card .card-header hr {
-    border-top: 1px solid var(--secondary-color);
-    margin: 0;
+	border-top: 1px solid var(--secondary-color);
+	margin: 0;
 }
 #course-program .card .card-body {
-    padding: 1.5rem;
-    font-size: 1rem;
+	padding: 1.5rem;
+	font-size: 1rem;
 }
 #course-program .card .card-body span {
-    color: var(--secondary-color-dark);
-    font-weight: 600;
+	color: var(--secondary-color-dark);
+	font-weight: 600;
 }
 #course-program .card .card-body :last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 #course-program .card .card-footer {
-    border-top: none;
-    background: none;
-    padding: 1.25rem;
-    padding-top: 0;
-    text-align: center;
+	border-top: none;
+	background: none;
+	padding: 1.25rem;
+	padding-top: 0;
+	text-align: center;
 }
 #course-program .card .card-footer hr {
-    border-top: 1px solid var(--secondary-color);
-    margin: 0 0 1.25rem;
+	border-top: 1px solid var(--secondary-color);
+	margin: 0 0 1.25rem;
 }
 
-.card-destaque {border:1px solid var(--secondary-color);}
-.card-destaque p {font-size:inherit;}
+.card-destaque {
+	border: 1px solid var(--secondary-color);
+}
+.card-destaque p {
+	font-size: inherit;
+}
 
-.presentation .bg-secondary-light {background-color: rgb(227, 211, 211,0.3) !important;}
+.presentation .bg-secondary-light {
+	background-color: rgb(227, 211, 211, 0.3) !important;
+}
 
 .presentation .table-responsive th {
-    vertical-align: middle;
-    border-bottom: 1px solid #d2a6a6;
+	vertical-align: middle;
+	border-bottom: 1px solid #d2a6a6;
 }
 
-.presentation.bg-section {background: #F8FAFC url(../images/home/section-bg.png);}
-
-
-
-@media (min-width:768px) {
-    .main {
-        background-position-y: 0;
-        background-size: 200%;
-        transform: none;
-    }
+.presentation.bg-section {
+	background: #f8fafc url(../images/home/section-bg.png);
 }
-@media (min-width:992px) {
-    .main {
-        background-position-y: 0;
-        background-size: 100%;
-    }
+
+@media (min-width: 768px) {
+	.main {
+		background-position-y: 0;
+		background-size: 200%;
+		transform: none;
+	}
+}
+@media (min-width: 992px) {
+	.main {
+		background-position-y: 0;
+		background-size: 100%;
+	}
 }

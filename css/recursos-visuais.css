@@ -926,7 +926,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 }
 
 .page-title-parallax[data-parallax='light'] {
-	background: url(../images/parallax-bg-secondary.png);
+	background: url(../images/parallax-bg-light.jpg);
 	padding: 50px 0;
 	background-attachment: fixed;
 	background-position: 50% 0;
@@ -935,6 +935,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 .page-title-parallax[data-parallax='light'] p {
 	font-family: 'Patrick Hands', sans-serif;
 	font-size: 2rem;
+	color: var(--secondary-color);
 }
 
 /*Fundos de destaques*/
