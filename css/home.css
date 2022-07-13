@@ -1,4 +1,4 @@
-/* s */
+/* GENERAL */
 
 html {
 	height: 100%;
@@ -23,6 +23,7 @@ body {
 .header-hero {
 	box-sizing: border-box;
 	min-height: 70vh;
+	max-height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,9 +64,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	-webkit-transform-origin: center center 0;
-	-webkit-transform: translateZ(-1px) scale(2) translate(55%, -10vh);
+	-webkit-transform: translateZ(-1px) scale(2) translate(55%, -13vh);
 	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2) translate(55%, -10vh);
+	transform: translateZ(-1px) scale(2) translate(55%, -13vh);
 	z-index: -1;
 	height: 80vh;
 	width: 600px;
@@ -82,9 +83,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	-webkit-transform-origin: center center 0;
-	-webkit-transform: translateZ(-1px) scale(2) translate(-55%, -10vh);
+	-webkit-transform: translateZ(-1px) scale(2) translate(-55%, -13vh);
 	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2) translate(-55%, -10vh);
+	transform: translateZ(-1px) scale(2) translate(-55%, -13vh);
 	z-index: -1;
 	height: 80vh;
 	width: 600px;
@@ -134,53 +135,68 @@ body {
 	}
 }
 
+/* CONTENT */
+
 main {
 	background-color: inherit;
 	position: relative;
 	z-index: 2;
 }
+h2.heading__title {
+	font-family: 'Patrick Hands', sans-serif !important;
+	text-transform: uppercase;
+	color: var(--text-color);
+	text-align: center;
+}
+h2.heading__title::after {
+	content: url(../images/head-block-line-large.svg);
+	display: block;
+}
 
 #course-program .card {
-	border: 1px solid var(--secondary-color);
-	box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+	border: 2px solid var(--primary-color);
+	border-bottom-style: groove;
+	border-bottom-width: 6px;
 	height: 100%;
 }
 
 #course-program .card .card-header {
-	border-bottom: none;
-	background: none;
-	padding: 1.25rem;
-	padding-bottom: 0;
+	margin: 30px 30px 0 30px;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #bfb5af;
+	display: block;
+	color: var(--primary-color);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.875rem;
+	text-transform: uppercase;
 }
-#course-program .card .card-header :first-child {
-	margin-bottom: 1rem;
-	font-size: 1.15rem;
+#course-program .card .card-header span {
+	display: block;
+	margin-bottom: 10px;
+	color: var(--secondary-color-dark);
+	font-family: 'Patrick Hands', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
-#course-program .card .card-header :nth-child(2) {
-	color: var(--dark-color);
-	margin-bottom: 1.25rem;
-	font-size: 1.25rem;
-}
-#course-program .card .card-header hr {
-	border-top: 1px solid var(--secondary-color);
-	margin: 0;
-}
+
 #course-program .card .card-body {
-	padding: 1.5rem;
-	font-size: 1rem;
+	padding: 30px;
 }
 #course-program .card .card-body span {
-	color: var(--secondary-color-dark);
-	font-weight: 600;
+	color: var(--primary-color);
+	font-weight: 400;
+	font-family: 'Patrick Hands', sans-serif;
+	text-transform: uppercase;
 }
 #course-program .card .card-body :last-child {
 	margin-bottom: 0;
 }
 #course-program .card .card-footer {
-	border-top: none;
+	border-top: 1px solid #bfb5af;
+	margin: 0 30px 30px 30px;
+	padding: 0;
+	padding: 30px 0 0 0;
 	background: none;
-	padding: 1.25rem;
-	padding-top: 0;
 	text-align: center;
 }
 #course-program .card .card-footer hr {

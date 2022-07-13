@@ -1239,7 +1239,7 @@ Listas
 	color: var(--secondary-color);
 }
 .obj-lista ul.list-group .list-group-item[list-style='none']:before {
-	font-family: 'Material Symbols Rounded';
+	display: none;
 	content: '';
 	/* list-style: none; */
 }
