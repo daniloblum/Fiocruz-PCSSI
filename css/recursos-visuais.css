@@ -114,6 +114,10 @@ section {
 	color: var(--color-light) !important;
 }
 
+.bg-primary-light {
+	background-color: var(--primary-color-extra-light) !important;
+}
+
 .bg-secondary {
 	background-color: var(--secondary-color) !important;
 }

@@ -38,7 +38,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
 		<!-- Animate CSS -->
-		<link rel="stylesheet" href="css/animate.min.css" />
+		<!-- <link rel="stylesheet" href="css/animate.min.css" /> -->
 
 		<!-- Project CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
@@ -58,8 +58,8 @@
 			<span class="background-left" aria-hidden="true"></span>
 		</header>
 
-		<main>
-			<section class="section presentation">
+		<main class="main">
+			<section id="presentation" class="section presentation">
 				<div class="container mb-5">
 					<div class="row justify-content-center pt-5 mb-5">
 						<div class="col-12 col-md-10 col-lg-8">
@@ -75,7 +75,7 @@
 				</div>
 			</section>
 
-			<section id="course-program" class="section presentation">
+			<section id="course-program" class="section bg-primary-light">
 				<div class="container mb-5">
 					<div class="row justify-content-center mb-5">
 						<div class="col-12 col-md-10 col-lg-8">
@@ -170,7 +170,7 @@
 					</div>
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-10 col-lg-8 text-center">
-							<button href="" class="button-secondary" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded">list</span> Créditos</button>
+							<button href="#" class="button-secondary" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded">list</span> Créditos</button>
 						</div>
 					</div>
 				</div>
@@ -219,164 +219,179 @@
 		<script type="text/javascript" src="./js/anime.min.js"></script>
 		<script type="text/javascript" src="./js/custom-anime.js"></script>
 
-		<!-- Modal Créditos -->
-		<div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="Créditos" aria-hidden="true" style="display: none">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
+		<div class="modal fade" id="modal-creditos" tabindex="0" aria-labelledby="exampleModalLabel" style="display: none" aria-modal="true" role="dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<span class="h4 modal-title">Créditos</span>
+						<h5 class="modal-title" id="modal-creditos">Créditos</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="modal-body">
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-10">
-									<h6 class="mb-2">Ministério da Saúde</h6>
-									<div class="mb-5">
-										<p class="mb-1">Marcelo Queiroga</p>
-										<p class="small text-muted"><em>Ministro</em></p>
-									</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-10">
+								<h6 class="mb-2">Ministério da Saúde</h6>
+								<div class="mb-5">
+									<p class="mb-1">Marcelo Queiroga</p>
+									<p class="small text-muted"><em>Ministro</em></p>
+								</div>
 
-									<h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
-									<div class="mb-5">
-										<p class="mb-1">Nísia Trindade Lima</p>
-										<p class="small text-muted"><em>Presidente</em></p>
-										<p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação (VPEIC)<br />Cristiani Vieira Machado</p>
-										<p class="small text-muted"><em>Vice-Presidente</em></p>
-									</div>
+								<h6 class="mb-2">Secretaria Vigilância em Saúde</h6>
+								<div class="mb-5">
+									<p class="mb-1">Arnaldo Correia de Medeiros</p>
+									<p class="small text-muted"><em>Secretário</em></p>
+									<p class="mb-1">Daniela Buosi Rohlfs</p>
+									<p class="small text-muted"><em>Diretora do Departamento de Saúde Ambiental, do Trabalhador e Vigilância das Emergências em Saúde Pública</em></p>
+									<p class="mb-1">Programa Vigiar SUS</p>
+								</div>
 
-									<h6 class="mb-2">Campus Virtual Fiocruz</h6>
-									<div class="mb-5">
-										<p class="mb-1">Ana Cristina da Matta Furniel</p>
-										<p class="small text-muted"><em>Coordenadora geral</em></p>
-										<p class="mb-1">Adélia Araújo</p>
-										<p class="small text-muted"><em>Coordenadora de produção</em></p>
-									</div>
+								<h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
+								<div class="mb-5">
+									<p class="mb-1">Nísia Trindade Lima</p>
+									<p class="small text-muted"><em>Presidente</em></p>
+									<p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação (VPEIC)<br />Cristiani Vieira Machado</p>
+									<p class="small text-muted"><em>Vice-Presidente</em></p>
+								</div>
 
-									<h6 class="mb-2">História da Saúde Pública no Brasil</h6>
-									<div class="mb-5">
-										<p class="mb-1">Carlos Henrique Assunção Paiva</p>
-										<p class="small text-muted"><em>Coordenação acadêmica</em></p>
-										<hr />
-										<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-										<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-									</div>
+								<h6 class="mb-2">Campus Virtual Fiocruz</h6>
+								<div class="mb-5">
+									<p class="mb-1">Ana Cristina da Matta Furniel</p>
+									<p class="small text-muted"><em>Coordenadora geral</em></p>
+									<p class="mb-1">Adélia Araújo</p>
+									<p class="small text-muted"><em>Coordenador de produção</em></p>
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Conteudistas</strong></p>
+								<h6 class="mb-2">Gestão de Riscos de Emergências em Saúde Pública no contexto da COVID-19</h6>
+								<div class="mb-5">
+									<p class="mb-1">Carlos Machado de Freitas<br />Maíra Lopes Mazoto</p>
+									<p class="small text-muted"><em>Coordenação</em></p>
 
-										<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-										<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">José Roberto Franco Reis</p>
-										<p class="small text-muted">Historiador. Doutor em história social pela Unicamp. Pesquisador do Observatório História e Saúde - COC-FIOCRUZ</p>
-										<hr />
-										<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
-										<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz</p>
-										<hr />
-										<p class="mb-1 small">Luiz Alves Araújo Neto</p>
-										<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório História e Saúde (COC/Fiocruz).</p>
-										<hr />
-										<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-										<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
-										<hr />
-									</div>
+									<hr />
+									<p class="mb-1 small">Carlos Machado de Freitas</p>
+									<p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz. Médica. Pós-doutora em Saúde Coletiva pelo IMS/ UERJ. Tecnologista em Saúde Pública do ICICT/ Fiocruz. Coordenadora Adjunta do Proqualis/ Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Maíra Lopes Mazoto</p>
+									<p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
+									<hr />
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Conteudistas</strong></p>
 
-										<p class="mb-1 small">Flávio Coelho Edler</p>
-										<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">Robert Wegner</p>
-										<p class="small text-muted">Cientista Social. Doutor em Sociologia pelo IUPERJ/UCAM. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">Rômulo de Paula Andrade</p>
-										<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pelo PPGHCS/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">Tânia Maria Dias Fernandes</p>
-										<p class="small text-muted">Graduada em Farmácia. Doutora em História Social pela USP. Professora do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">Tânia Salgado Pimenta</p>
-										<p class="small text-muted">Historiadora. Doutora em História pela Unicamp. Professora do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-									</div>
+									<p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
+									<p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
+									<hr />
+									<p class="mb-1 small">Carlos Machado de Freitas</p>
+									<p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Daniel Antunes Maciel Villela</p>
+									<p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
+									<hr />
+									<p class="mb-1 small">Eduardo Hage Carmo</p>
+									<p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
+									<hr />
+									<p class="mb-1 small">Margareth Crisóstomo Portela</p>
+									<p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+									<hr />
+									<p class="mb-1 small">Tais De Moura Ariza Alpino</p>
+									<p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
+									<hr />
+									<p class="mb-1 small">Vânia Rocha</p>
+									<p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
+									<hr />
+									<p class="mb-1 small">Victor Grabois</p>
+									<p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+									<hr />
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Revisão Técnica</strong></p>
-										<p class="mb-1 small">Carlos Henrique Assunção Paiva</p>
-										<p class="small text-muted">Historiador. Doutor em Saúde Coletiva pelo IMS/UERJ. Coordenador do Observatório História e Saúde/COC/Fiocruz. Professor do PPGHCS/COC/Fiocruz.</p>
-										<hr />
-										<p class="mb-1 small">José Roberto Franco Reis</p>
-										<p class="small text-muted">Historiador. Doutor em história social pela Unicamp. Pesquisador do Observatório História e Saúde - COC-FIOCRUZ.</p>
-										<hr />
-										<p class="mb-1 small">Luiz Antonio da Silva Teixeira</p>
-										<p class="small text-muted">Historiador. Doutor em História Social pela USP. Coordenador adjunto do Programa de Pós-graduação em Saúde da Mulher e da Criança do Instituto Fernandes Figueira - Fiocruz; Professor dos Programas de História das ciências da Saúde e de Divulgação de Científica da Casa de Oswaldo Cruz.</p>
-										<hr />
-										<p class="mb-1 small">Luiz Alves Araújo Neto</p>
-										<p class="small text-muted">Historiador. Doutor em História das Ciências e da Saúde pela Fiocruz. Bolsista de Pós-doutorado FAPERJ (PDR-10). Pesquisador do Observatório História e Saúde (COC/Fiocruz).</p>
-										<hr />
-										<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-										<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
-										<hr />
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Revisão de Português</strong></p>
-										<p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
-									</div>
+									<p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
+									<p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
+									<hr />
+									<p class="mb-1 small">Carlos Machado de Freitas</p>
+									<p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
+									<hr />
+									<p class="mb-1 small">Daniel Antunes Maciel Villela</p>
+									<p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
+									<hr />
+									<p class="mb-1 small">Eduardo Hage Carmo</p>
+									<p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
+									<hr />
+									<p class="mb-1 small">Margareth Crisóstomo Portela</p>
+									<p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+									<hr />
+									<p class="mb-1 small">Tais De Moura Ariza Alpino</p>
+									<p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
+									<hr />
+									<p class="mb-1 small">Vânia Rocha</p>
+									<p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
+									<hr />
+									<p class="mb-1 small">Victor Grabois</p>
+									<p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+									<hr />
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Designer Educacional</strong></p>
-										<p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Revisão Técnica</strong></p>
+									<p class="mb-1 small">Maíra Lopes Mazoto</p>
+									<p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
+									<hr />
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Designer de Interface</strong></p>
-										<p class="mb-1">Aline Polycarpo</p>
-										<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-										<p class="mb-1">Danilo Blum</p>
-										<p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
-										<p class="mb-1">Luciana Nunes</p>
-										<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Revisão de Português</strong></p>
+									<p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
-										<p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Desenvolvedor</em></p>
-										<p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Desenvolvedor</em></p>
-										<p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Analista de suporte</em></p>
-										<p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Analista de suporte</em></p>
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Designer Educacional</strong></p>
+									<p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Recursos Educacionais</strong></p>
-										<p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Bibliotecária</em></p>
-										<p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Designer de Interface</strong></p>
+									<p class="mb-1">Aline Polycarpo</p>
+									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+									<p class="mb-1">Danilo Blum</p>
+									<p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
+									<p class="mb-1">Luciana Nunes</p>
+									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+								</div>
 
-									<div class="mb-5">
-										<p class="mb-3 small"><strong>Recursos Audiovisuais</strong></p>
-										<p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
-										<p class="small text-muted"><em>Edição de vídeo</em></p>
-									</div>
+								<div class="mb-5">
+									<p class="mb-3"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
+									<p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Desenvolvedor</em></p>
+									<p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Desenvolvedor</em></p>
+									<p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Analista de suporte</em></p>
+									<p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Analista de suporte</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3"><strong>Recursos Educacionais</strong></p>
+									<p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Bibliotecária</em></p>
+									<p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
+								</div>
+
+								<div class="mb-5">
+									<p class="mb-3"><strong>Recursos Audiovisuais</strong></p>
+									<p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
+									<p class="small text-muted"><em>Edição de vídeo</em></p>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="modal-footer">
-						<button href="#" data-dismiss="modal" class="button-primary"><span>Fechar</span></button>
+						<button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
 					</div>
 				</div>
 			</div>

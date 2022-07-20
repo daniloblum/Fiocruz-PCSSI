@@ -16,6 +16,7 @@ body {
 	height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	z-index: 5;
 }
 
 /* HEADER  */
@@ -54,13 +55,11 @@ body {
 }
 .header-hero .background-right {
 	bottom: 0;
-	/* left: 0; */
 	position: absolute;
 	right: 0;
 	top: 0;
 	display: block;
 	background-image: url('../images/home/tarja_direita.png');
-	/* background-size: cover; */
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	-webkit-transform-origin: center center 0;
@@ -75,11 +74,9 @@ body {
 	bottom: 0;
 	left: 0;
 	position: absolute;
-	/* right: 0; */
 	top: 0;
 	display: block;
 	background-image: url('../images/home/tarja_esquerda.png');
-	/* background-size: cover; */
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	-webkit-transform-origin: center center 0;
@@ -158,6 +155,7 @@ h2.heading__title::after {
 	border-bottom-style: groove;
 	border-bottom-width: 6px;
 	height: 100%;
+	z-index: 2;
 }
 
 #course-program .card .card-header {
@@ -235,5 +233,45 @@ h2.heading__title::after {
 	.main {
 		background-position-y: 0;
 		background-size: 100%;
+	}
+}
+
+/* BACKGROUND */
+
+#presentation::before,
+#course-program::before {
+	content: '';
+	background: url(../images/page-content-bg1.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50px;
+	right: 0%;
+	z-index: 0;
+	opacity: 0.5;
+}
+#presentation::after,
+#course-program::after {
+	content: '';
+	display: block;
+	background: url(../images/page-content-bg2.png);
+	background-repeat: space;
+	width: 500px;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 500px;
+	left: 0%;
+	z-index: 0;
+	opacity: 0.5;
+}
+@media (min-width: 1600px) {
+	#presentation::before {
+		opacity: 1;
+	}
+	#presentation::after {
+		opacity: 1;
 	}
 }
