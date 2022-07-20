@@ -6,14 +6,14 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+.parallax {
 	margin: 0;
 	padding: 0;
 	-webkit-perspective: 1px;
 	perspective: 1px;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	height: 100%;
+	height: 100vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	z-index: 5;
@@ -89,55 +89,53 @@ body {
 }
 
 .header__title h1 {
-	font-size: 12vw;
+	font-size: 9vw;
 	margin: 0 auto;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 2px 4px 2px rgb(0 0 0 / 50%);
 	text-transform: uppercase;
 	line-height: 1;
-	padding: 50px 30vw;
+	padding: 50px 8vw;
 }
 .header__title h1 span {
 	font-family: 'Roboto Condensed Bold', sans-serif;
 }
+@media (min-width: 576px) {
+	.header__title h1 {
+		font-size: 10vw;
+		padding: 50px 15vw;
+	}
+}
 
 @media (min-width: 768px) {
-	/* header {
-		height: 70vw;
-	} */
-	.header__title .logo {
-		margin: 0 auto 2vw;
-	}
 	.header__title h1 {
-		font-size: 2.5vw;
+		font-size: 7vw;
+		padding: 50px 25vw;
 	}
 }
-
 @media (min-width: 992px) {
-	/* header {
-		height: 30vw;
-	} */
-	.header__title .logo {
-		margin: 0 auto 2vw;
-	}
 	.header__title h1 {
-		font-size: 4.25vw;
+		font-size: 6vw;
+		padding: 50px 22vw;
 	}
 }
-
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.header__title h1 {
-		font-size: 4.25vw;
+		font-size: 4.25rem;
+		padding: 50px 24vw;
 	}
 }
 
 /* CONTENT */
 
 main {
-	background-color: inherit;
+	background-color: #ffffff;
 	position: relative;
 	z-index: 2;
+}
+section {
+	position: relative;
 }
 h2.heading__title {
 	font-family: 'Patrick Hands', sans-serif !important;
@@ -247,7 +245,7 @@ h2.heading__title::after {
 	max-width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 50px;
+	top: 0;
 	right: 0%;
 	z-index: 0;
 	opacity: 0.5;
@@ -262,7 +260,7 @@ h2.heading__title::after {
 	max-width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 500px;
+	top: 0;
 	left: 0%;
 	z-index: 0;
 	opacity: 0.5;

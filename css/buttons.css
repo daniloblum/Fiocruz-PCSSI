@@ -21,6 +21,8 @@
 
 .button-primary:focus {
 	text-decoration: none;
+	border: 2px solid #000000;
+	border-style: outset;
 }
 
 .button-secondary {
@@ -44,4 +46,6 @@
 
 .button-secondary:focus {
 	text-decoration: none;
+	border: 2px solid #000000;
+	border-style: outset;
 }
