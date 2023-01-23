@@ -159,10 +159,15 @@ pre {
 	content: url(../images/head-block-line-small.svg);
 	display: block;
 }
-.heading__block .heading__title {
+.heading__block h3.heading__title {
 	color: var(--secondary-color);
 	font-weight: 700;
 	font-size: 2.5rem;
+}
+.heading__block h4.heading__title {
+	color: var(--secondary-color);
+	font-weight: 700;
+	font-size: 2rem;
 }
 .heading__block p,
 .heading__lead {
@@ -1107,7 +1112,7 @@ Flipcards 2.0
 
 /*Fundos para flipcard*/
 .flip-card .fundo1 {
-	background-image: url(../images/fundo-flipcard.jpg);
+	background-image: url(../images/recursos-visuais/fundo-flipcard.jpg);
 	background-size: cover;
 }
 
