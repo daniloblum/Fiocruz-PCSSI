@@ -1,4 +1,5 @@
 @import '../css/colors.css';
+@import '../css/recursos-visuais/abas.css';
 
 /* Página de recursos */
 
@@ -181,62 +182,7 @@ pre {
 	margin: 20px 0;
 } */
 
-/* -------------------------------- 
 
-Abas
-
--------------------------------- */
-
-.abas .nav-tabs {
-	border-bottom: 1px solid var(--color-light);
-}
-
-.abas .nav-link {
-	text-decoration: none !important;
-	padding: 0.5rem;
-}
-
-.abas .nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link,
-.abas .nav-tabs .nav-link.active:hover,
-.nav-tabs .nav-item.show .nav-link:hover {
-	color: #fff;
-	background-color: var(--primary-color);
-	border-color: var(--primary-color);
-}
-
-.abas .nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-	border-color: #e9ecef #e9ecef #dee2e6;
-	background-color: var(--color-light-hover);
-	color: var(--primary-color);
-}
-.abas .dropdown-item {
-	text-decoration: none;
-	padding: 0.5rem 1rem;
-	font-weight: 400;
-}
-
-.abas .dropdown-item.active,
-.dropdown-item:active {
-	color: #fff;
-	text-decoration: none;
-	background-color: var(--primary-color);
-}
-
-.abas .tab-content {
-	border-bottom: 1px solid #e9ecef;
-}
-
-.boot-tabs {
-	margin-bottom: 20px !important;
-}
-
-@media (min-width: 992px) {
-	.abas .nav-link {
-		padding: 0.5rem;
-	}
-}
 
 /* --------------------------------
 
