@@ -1012,7 +1012,7 @@ Flipcards 2.0
 	top: 0;
 	left: 0;
 	/* background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%); */
-	background: linear-gradient(180deg, rgba(120, 191, 59, 0.35) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(74, 167, 1, 1) 100%);
+	background: linear-gradient(180deg, rgba(249, 103, 2, 0.35) 0%, rgba(255, 255, 255, 0.18) 50%, rgba(249, 103, 2, 1) 100%);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -1022,8 +1022,20 @@ Flipcards 2.0
 }
 
 .flip-card-front .card-title {
-	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65) !important;
+	font-family: 'Patrick Hands';
+	color:#000;
 }
+
+.flip-card-front .card-text {
+	color:#000;
+	font-weight: 600;
+}
+
+.flip-card-front .btn-outline-dark {border-color: #000;}
+
+/* .flip-card-front .card-title {
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65) !important;
+} */
 
 .flip-card-front .card-footer,
 .flip-card-back .card-footer {
@@ -1044,6 +1056,7 @@ Flipcards 2.0
 
 .flip-card-front .card-footer label {
 	margin-bottom: 0;
+	border-width: 2px;
 }
 
 /*Tamanho do ícone do botão da frente*/
