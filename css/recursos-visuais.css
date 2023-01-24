@@ -1,4 +1,5 @@
 @import '../css/colors.css';
+@import '../css/recursos-visuais/abas.css';
 
 /* Página de recursos */
 
@@ -181,62 +182,7 @@ pre {
 	margin: 20px 0;
 } */
 
-/* -------------------------------- 
 
-Abas
-
--------------------------------- */
-
-.abas .nav-tabs {
-	border-bottom: 1px solid var(--color-light);
-}
-
-.abas .nav-link {
-	text-decoration: none !important;
-	padding: 0.5rem;
-}
-
-.abas .nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link,
-.abas .nav-tabs .nav-link.active:hover,
-.nav-tabs .nav-item.show .nav-link:hover {
-	color: #fff;
-	background-color: var(--primary-color);
-	border-color: var(--primary-color);
-}
-
-.abas .nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-	border-color: #e9ecef #e9ecef #dee2e6;
-	background-color: var(--color-light-hover);
-	color: var(--primary-color);
-}
-.abas .dropdown-item {
-	text-decoration: none;
-	padding: 0.5rem 1rem;
-	font-weight: 400;
-}
-
-.abas .dropdown-item.active,
-.dropdown-item:active {
-	color: #fff;
-	text-decoration: none;
-	background-color: var(--primary-color);
-}
-
-.abas .tab-content {
-	border-bottom: 1px solid #e9ecef;
-}
-
-.boot-tabs {
-	margin-bottom: 20px !important;
-}
-
-@media (min-width: 992px) {
-	.abas .nav-link {
-		padding: 0.5rem;
-	}
-}
 
 /* --------------------------------
 
@@ -1066,7 +1012,7 @@ Flipcards 2.0
 	top: 0;
 	left: 0;
 	/* background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%); */
-	background: linear-gradient(180deg, rgba(120, 191, 59, 0.35) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(74, 167, 1, 1) 100%);
+	background: linear-gradient(180deg, rgba(249, 103, 2, 0.35) 0%, rgba(255, 255, 255, 0.18) 50%, rgba(249, 103, 2, 1) 100%);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -1076,8 +1022,20 @@ Flipcards 2.0
 }
 
 .flip-card-front .card-title {
-	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65) !important;
+	font-family: 'Patrick Hands';
+	color:#000;
 }
+
+.flip-card-front .card-text {
+	color:#000;
+	font-weight: 600;
+}
+
+.flip-card-front .btn-outline-dark {border-color: #000;}
+
+/* .flip-card-front .card-title {
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65) !important;
+} */
 
 .flip-card-front .card-footer,
 .flip-card-back .card-footer {
@@ -1098,6 +1056,7 @@ Flipcards 2.0
 
 .flip-card-front .card-footer label {
 	margin-bottom: 0;
+	border-width: 2px;
 }
 
 /*Tamanho do ícone do botão da frente*/
