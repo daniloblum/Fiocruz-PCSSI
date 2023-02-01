@@ -241,6 +241,7 @@ Accordion
 	transform: rotate(180deg);
 }
 
+
 .accordion .accordion__header a {
 	color: var(--primary-color);
 	text-decoration: none !important;
