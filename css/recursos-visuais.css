@@ -182,8 +182,6 @@ pre {
 	margin: 20px 0;
 } */
 
-
-
 /* --------------------------------
 
 Accordion
@@ -240,7 +238,6 @@ Accordion
 .collapsible-link[aria-expanded='true']::before {
 	transform: rotate(180deg);
 }
-
 
 .accordion .accordion__header a {
 	color: var(--primary-color);
@@ -1024,15 +1021,17 @@ Flipcards 2.0
 
 .flip-card-front .card-title {
 	font-family: 'Patrick Hands';
-	color:#000;
+	color: #000;
 }
 
 .flip-card-front .card-text {
-	color:#000;
+	color: #000;
 	font-weight: 600;
 }
 
-.flip-card-front .btn-outline-dark {border-color: #000;}
+.flip-card-front .btn-outline-dark {
+	border-color: #000;
+}
 
 /* .flip-card-front .card-title {
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65) !important;
@@ -1231,12 +1230,12 @@ Listas
 .obj-lista ol.list-group .list-group-item {
 	display: list-item;
 	padding-left: 10px;
-	counter-increment: contador-ul;
+	counter-increment: contador-ol;
 }
 
 .obj-lista ol.list-group .list-group-item:before {
 	background-color: var(--primary-color);
-	content: counter(contador-ul);
+	content: counter(contador-ol);
 	margin-right: 0.8rem;
 	border-radius: 50%;
 	color: #fff;
@@ -1248,6 +1247,16 @@ Listas
 	display: inline-block;
 	box-sizing: border-box;
 	line-height: 30px;
+	font-family: 'Noto Sans Regular', sans-serif;
+	font-size: 100%;
+}
+
+.obj-lista ol.list-group .list-group-item[tipo='I']:before {
+	content: counter(contador-ol, upper-roman);
+}
+
+.obj-lista ol.list-group .list-group-item[tipo='a']:before {
+	content: counter(contador-ol, lower-alpha);
 }
 
 /* ----------------------------------------------------------------
