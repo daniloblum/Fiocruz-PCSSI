@@ -1051,7 +1051,11 @@ Flipcards 2.0
 }
 
 .flip-card-front .card-footer .btn:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--primary-color);
+}
+
+.flip-card-front .card-footer .btn:hover img {
+	content: "oi!";
 }
 
 .flip-card-front .card-footer label {
@@ -1739,11 +1743,6 @@ Timeline
 	opacity: 0.3;
 }
 
-/*Série 3*/
-.serie3 .cd-timeline__container::before {
-	background: var(--secondary-color);
-}
-
 .cd-timeline h6 {
 	font-weight: 400;
 }
@@ -1800,6 +1799,9 @@ Timeline
 	-webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+
+.cd-timeline__content .h4,
+.cd-timeline__content .h5  {font-family: 'Patrick Hands' !important;}
 
 /* .cd-timeline__content img {
   max-width: 20%;
