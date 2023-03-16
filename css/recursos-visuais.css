@@ -1055,7 +1055,7 @@ Flipcards 2.0
 }
 
 .flip-card-front .card-footer .btn:hover img {
-	content: "oi!";
+	content: 'oi!';
 }
 
 .flip-card-front .card-footer label {
@@ -1230,16 +1230,37 @@ Listas
 	list-style: none;
 	counter-reset: contador-ol;
 }
-
-.obj-lista ol.list-group .list-group-item {
-	display: list-item;
-	padding-left: 10px;
+.obj-lista ol.list-group.nested {
+	counter-reset: subcontador-ol;
+}
+.obj-lista ol.list-group > .list-group-item::before {
+	/* display: list-item; */
 	counter-increment: contador-ol;
+	content: counter(contador-ol);
+}
+.obj-lista ol.list-group[tipo='a'] > .list-group-item::before {
+	counter-increment: contador-ol;
+	content: counter(contador-ol, lower-alpha);
+}
+.obj-lista ol.list-group[tipo='I'] > .list-group-item::before {
+	counter-increment: contador-ol;
+	content: counter(contador-ol, upper-roman);
+}
+.obj-lista ol.list-group .list-group-item > ol.list-group.nested > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol) '.' counter(subcontador-ol);
+}
+.obj-lista ol.list-group[tipo='a'] .list-group-item > ol.list-group.nested > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol, lower-alpha) '.' counter(subcontador-ol, lower-alpha);
+}
+.obj-lista ol.list-group[tipo='I'] .list-group-item > ol.list-group.nested > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol, upper-roman) '.' counter(subcontador-ol, upper-roman);
 }
 
-.obj-lista ol.list-group .list-group-item:before {
+.obj-lista ol.list-group .list-group-item::before {
 	background-color: var(--primary-color);
-	content: counter(contador-ol);
 	margin-right: 0.8rem;
 	border-radius: 50%;
 	color: #fff;
@@ -1254,14 +1275,27 @@ Listas
 	font-family: 'Noto Sans Regular', sans-serif;
 	font-size: 100%;
 }
-
-.obj-lista ol.list-group .list-group-item[tipo='I']:before {
+.obj-lista ol.list-group .list-group-item > ol.list-group.nested > .list-group-item::before {
+	font-weight: 700;
+	color: var(--primary-color);
+	background: none;
+}
+.obj-lista ol.list-group .list-group-item > ol.list-group {
+	margin-left: 2.75rem;
+}
+/* .obj-lista ol.list-group .list-group-item > ol.list-group.nested > .list-group-item::before {
+	font-size: 0.75rem;
+} */
+/* 
+.obj-lista ol.list-group[tipo='I'] .list-group-item::before {
+	counter-increment: contador-ol;
 	content: counter(contador-ol, upper-roman);
 }
 
-.obj-lista ol.list-group .list-group-item[tipo='a']:before {
+.obj-lista ol.list-group[tipo='a'] .list-group-item::before {
+	counter-increment: contador-ol;
 	content: counter(contador-ol, lower-alpha);
-}
+} */
 
 /* ----------------------------------------------------------------
 
@@ -1805,7 +1839,9 @@ Timeline
 }
 
 .cd-timeline__content .h4,
-.cd-timeline__content .h5  {font-family: 'Patrick Hands' !important;}
+.cd-timeline__content .h5 {
+	font-family: 'Patrick Hands' !important;
+}
 
 /* .cd-timeline__content img {
   max-width: 20%;
