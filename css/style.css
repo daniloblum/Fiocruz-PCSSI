@@ -5,6 +5,7 @@
 @import 'fonts.css';
 @import 'buttons.css';
 @import 'recursos-visuais.css';
+@import 'exercise.css';
 
 * {
 	margin: 0;
@@ -91,7 +92,6 @@ a[target='_blank']:after :hover {
 strong {
 	font-weight: 700;
 }
-
 
 .figure-caption {
 	font-size: 75%;
