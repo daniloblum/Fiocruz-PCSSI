@@ -13,9 +13,18 @@
 	--text-color: #1e1e1e;
 	--text-color-light: #6c757d;
 
+	--color-white: #ffffff;
+	--color-black: #000000;
 	--color-dark: #1e1e1e;
 	--color-light: #eef2f6;
 	--color-light-hover: #e6e6e625;
+
+	/* Timeline Vertical */
+
+	--timeline-color-bullet-background: var(--primary-color);
+	--timeline-color-bullet-stroke: var(--color-white);
+	--timeline-color-bullet-text: var(--color-white);
+	--timeline-color-line: var(--secondary-color);
 
 	/* Exercício de Fixação */
 
