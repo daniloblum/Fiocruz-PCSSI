@@ -1259,7 +1259,7 @@ Listas
 	content: counter(contador-ol, upper-roman) '.' counter(subcontador-ol, upper-roman);
 }
 
-.obj-lista ol.list-group .list-group-item::before {
+.obj-lista ol.list-group > .list-group-item::before {
 	background-color: var(--primary-color);
 	margin-right: 0.8rem;
 	border-radius: 50%;
