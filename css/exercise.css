@@ -4,7 +4,7 @@
 .mcq-card .mcq__question {
 	padding: 30px 0;
 	border-bottom: 1px solid var(--exercise-divider-line);
-	font-family: 'Roboto Condensed Bold', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.25rem;
 }
 

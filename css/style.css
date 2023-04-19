@@ -91,6 +91,11 @@ a[target='_blank']:after :hover {
 }
 strong {
 	font-weight: 700;
+	font-family: 'Roboto Condensed Bold', sans-serif;
+}
+
+u {
+	font-family: inherit;
 }
 
 .figure-caption {
