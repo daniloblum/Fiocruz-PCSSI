@@ -169,3 +169,9 @@ svg .info .has-info {
 svg .info .has-info:hover .has-info--hover {
 	mix-blend-mode: color;
 }
+
+/* Créditos */
+
+#modal-creditos .h6 {
+	color: var(--primary-color);
+}
