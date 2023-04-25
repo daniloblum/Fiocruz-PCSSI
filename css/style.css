@@ -5,6 +5,7 @@
 @import 'fonts.css';
 @import 'buttons.css';
 @import 'recursos-visuais.css';
+@import 'exercise.css';
 
 * {
 	margin: 0;
@@ -90,8 +91,12 @@ a[target='_blank']:after :hover {
 }
 strong {
 	font-weight: 700;
+	font-family: 'Roboto Condensed Bold', sans-serif;
 }
 
+u {
+	font-family: inherit;
+}
 
 .figure-caption {
 	font-size: 75%;
@@ -163,4 +168,10 @@ svg .info .has-info {
 }
 svg .info .has-info:hover .has-info--hover {
 	mix-blend-mode: color;
+}
+
+/* Créditos */
+
+#modal-creditos .h6 {
+	color: var(--primary-color);
 }
