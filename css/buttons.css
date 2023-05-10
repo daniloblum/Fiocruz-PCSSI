@@ -1,6 +1,7 @@
 /* Buttons */
 
 .button-primary {
+	cursor: pointer;
 	display: inline-block;
 	padding: 8px 16px;
 	min-width: 120px;
@@ -19,13 +20,14 @@
 	text-decoration: none;
 }
 
-.button-primary:focus {
+.button-primary:focus-visible {
 	text-decoration: none;
 	border: 2px solid #000000;
 	border-style: outset;
 }
 
 .button-secondary {
+	cursor: pointer;
 	display: inline-block;
 	padding: 8px 16px;
 	min-width: 120px;
@@ -44,7 +46,7 @@
 	text-decoration: none;
 }
 
-.button-secondary:focus {
+.button-secondary:focus-visible {
 	text-decoration: none;
 	border: 2px solid #000000;
 	border-style: outset;
