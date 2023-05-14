@@ -37,7 +37,7 @@
 	color: var(--primary-color);
 	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .button-secondary:hover {
 	background-color: var(--primary-color-light);

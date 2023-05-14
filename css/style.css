@@ -175,3 +175,111 @@ svg .info .has-info:hover .has-info--hover {
 #modal-creditos .h6 {
 	color: var(--primary-color);
 }
+
+/* LIghtbox */
+
+.lightbox {
+	cursor: zoom-in;
+}
+
+.lightbox::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: var(--color-black);
+	opacity: 0;
+	transition: 0.25s ease-out;
+}
+.lightbox:hover::after {
+	opacity: 0.25;
+}
+.lightbox__image {
+	position: fixed;
+	padding: 30px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	cursor: zoom-out;
+}
+.lightbox__image img {
+	width: auto;
+	height: 100%;
+	background-color: royalblue;
+}
+
+/* Compartilhar Cards */
+
+.share-cards__header {
+	margin: 50px 0;
+}
+.share-cards__body {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.share-cards__content {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: start;
+	align-items: start;
+}
+.share-cards__image {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	background-color: var(--primary-color-extra-light);
+	text-align: center;
+	border-radius: 8px;
+}
+/* .share-cards__image span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	color: var(--color-white);
+	opacity: 0;
+	transition: 0.25s ease-out;
+	z-index: 10;
+}
+.share-cards__image:hover span {
+	opacity: 1;
+} */
+.share-cards__image img {
+	height: 100%;
+	width: auto;
+}
+
+/* .lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 99;
+}
+.lightbox img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	height: 100%;
+}
+.lightbox:target {
+	display: block;
+} */
