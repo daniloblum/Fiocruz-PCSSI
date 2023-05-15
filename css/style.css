@@ -243,43 +243,15 @@ svg .info .has-info:hover .has-info--hover {
 	text-align: center;
 	border-radius: 8px;
 }
-/* .share-cards__image span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 60px;
-	color: var(--color-white);
-	opacity: 0;
-	transition: 0.25s ease-out;
-	z-index: 10;
-}
-.share-cards__image:hover span {
-	opacity: 1;
-} */
 .share-cards__image img {
 	height: 100%;
 	width: auto;
 }
 
-/* .lightbox {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	z-index: 99;
+/* Iframe e Vídeos */
+
+iframe,
+video {
+	border: 1px solid #999ea5 !important;
+	border-radius: 0.75rem;
 }
-.lightbox img {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: auto;
-	height: 100%;
-}
-.lightbox:target {
-	display: block;
-} */
