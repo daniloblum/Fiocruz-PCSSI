@@ -130,7 +130,7 @@ html {
 /* CONTENT */
 
 main {
-	background: url(images/page-bg-mobile.png), #ffffff;
+	background: url(../images/page-bg-mobile.png), #ffffff;
 	background-position: center;
 	background-size: contain;
 	position: relative;
@@ -151,7 +151,7 @@ h2.heading__title::after {
 }
 
 #course-program {
-	background: url(/images/page-bg-mobile.png), var(--primary-color-extra-light);
+	background: url(../images/page-bg-mobile.png), var(--primary-color-extra-light);
 	background-position: center;
 	background-size: contain;
 	position: relative;
@@ -230,10 +230,10 @@ h2.heading__title::after {
 
 @media (min-width: 768px) {
 	.main {
-		background: url(images/page-bg.png), #ffffff;
+		background: url(../images/page-bg.png), #ffffff;
 	}
 	#course-program {
-		background: url(images/page-bg.png), var(--primary-color-extra-light);
+		background: url(../images/page-bg.png), var(--primary-color-extra-light);
 	}
 }
 /* BACKGROUND */
