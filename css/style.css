@@ -50,6 +50,7 @@ a:visited {
 	font-weight: 500;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
+	overflow-wrap: anywhere;
 }
 a:hover,
 a:focus {

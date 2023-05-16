@@ -79,3 +79,13 @@ imageToLightbox.forEach(image => {
 		}
 	});
 });
+
+// Accordion Scroll to Selected Item
+
+const accordions = document.querySelectorAll('.accordion__header > a');
+
+accordions.forEach(accordion => {
+	accordion.addEventListener('show.bs.collapse', function () {
+		console.log('fechou');
+	});
+});
