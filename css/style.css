@@ -205,15 +205,17 @@ svg .info .has-info:hover .has-info--hover {
 	bottom: 0;
 	right: 0;
 	width: auto;
-	z-index: 99;
+	z-index: 999;
 	background-color: rgba(0, 0, 0, 0.85);
 	text-align: center;
 	cursor: zoom-out;
+	object-fit: contains;
 }
 .lightbox__image img {
-	width: auto;
+	object-fit: contain;
+	width: 100%;
 	height: 100%;
-	background-color: royalblue;
+	display: block;
 }
 
 /* Compartilhar Cards */
@@ -230,10 +232,20 @@ svg .info .has-info:hover .has-info--hover {
 }
 .share-cards__content {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 20px;
 	justify-content: start;
-	align-items: start;
+	align-items: center;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.share-cards__content {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		justify-content: start;
+		align-items: start;
+	}
 }
 .share-cards__image {
 	position: relative;

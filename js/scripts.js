@@ -11,6 +11,7 @@
 })();
 
 // Botão de copiar podcast
+
 const copyButton = document.querySelectorAll('.copy-to-clip');
 
 copyButton.forEach(btn => {
@@ -43,7 +44,8 @@ function tooltipFeedback(b) {
 	});
 }
 
-// Lightbox on Share Cards
+// Lightbox (insert the class "lightbox" into <figure>)
+
 const imageToLightbox = document.querySelectorAll('.lightbox');
 
 imageToLightbox.forEach(image => {
@@ -53,7 +55,6 @@ imageToLightbox.forEach(image => {
 			const getImageSrc = getImage.getAttribute('src');
 			const imageLightbox = document.createElement('div');
 
-			// imageLightbox.setAttribute('src', getImageSrc);
 			imageLightbox.classList.add('lightbox__image');
 
 			document.body.appendChild(imageLightbox);

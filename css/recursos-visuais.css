@@ -149,7 +149,7 @@ pre {
 
 .heading__block .heading__before {
 	display: block;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	font-family: 'Patrick Hands', 'Roboto', sans-serif;
 	text-transform: uppercase;
 	line-height: 1;
@@ -181,6 +181,12 @@ pre {
 	border-top: 2px solid var(--primary-color);
 	margin: 20px 0;
 } */
+
+@media (min-width: 768px) {
+	.heading__block .heading__before {
+		font-size: 1.75rem;
+	}
+}
 
 /* --------------------------------
 
