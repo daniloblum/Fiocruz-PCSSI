@@ -9,7 +9,8 @@ footer .linha-de-marcas {
 footer .logos {
 	padding: 30px 20px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1.25fr;
+	grid-template-columns: 1fr 1.25fr;
+	grid-template-rows: auto;
 	column-gap: 40px;
 	list-style: none;
 	margin: 0;
@@ -25,20 +26,29 @@ footer .logos li {
 	text-align: center;
 }
 footer small {
+	display: block;
 	font-size: 0.75rem;
 }
 footer img {
 	max-width: 100%;
 	height: 100%;
+	display: inline-block;
 }
 footer .logos.principais {
 	padding: 20px;
 	border-top: 1px solid var(--secondary-color-light);
 	display: grid;
-	grid-template-columns: 1fr 1fr 1.5fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 	column-gap: 20px;
 }
-
+footer .logos.principais li:last-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+footer .logos img {
+	max-width: 75%;
+}
 @media (min-width: 768px) {
 	footer img {
 		max-height: 120px;
@@ -58,10 +68,19 @@ footer .logos.principais {
 	footer .logos {
 		padding: 0 20px;
 		column-gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr 1.25fr;
 	}
 	footer .logos.principais {
+		grid-template-columns: 1fr 1fr 1.75fr;
 		padding: 0 20px;
 		border: none;
 		border-left: 1px solid var(--secondary-color-light);
+	}
+	/* footer .logos li {
+		align-self: flex-end;
+	} */
+	footer .logos.principais li:last-child {
+		grid-column-start: 3;
+		grid-column-end: 4;
 	}
 }
