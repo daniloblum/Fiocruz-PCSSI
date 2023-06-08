@@ -59,7 +59,7 @@ a:focus {
 	text-decoration: underline;
 }
 
-a[target='_blank']:after {
+a[target='_blank']:not(.no-after):after {
 	font-family: 'Material Symbols Rounded';
 	content: 'open_in_new';
 	vertical-align: text-bottom;
@@ -267,4 +267,5 @@ iframe,
 video {
 	border: 1px solid #999ea5 !important;
 	border-radius: 0.75rem;
+	background-color: #999ea5;
 }
